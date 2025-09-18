@@ -2,7 +2,7 @@ import streamlit as st
 
 
 import os
-os.environ['GEMINI_API_KEY'] = 'AIzaSyDnYy_0BYQNQOeJxo0aur-2ie6nuAu1wio'
+os.environ['GEMINI_API_KEY'] = 'Enter ur GROQ API key'
 
 
 import google.generativeai as genai
@@ -40,4 +40,5 @@ if submit and input:
 st.subheader("The Chat History is")
    
 for role, text in st.session_state['chat_history']:
+
     st.write(f"{role}: {text}")
